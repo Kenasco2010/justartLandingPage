@@ -1,0 +1,11 @@
+input.middle-email {
+  background: black;
+  height: 43px;
+  width: 53%;
+  color: white;
+  text-align: center;
+}
+
+.container.middle-email-container {
+  margin-left: 40px;
+}
