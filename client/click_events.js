@@ -16,7 +16,26 @@ Template.index.events({
     });
   // Clear form
   $("#firstSectionEmail").val('');
-  swal("Oops...", "Something went wrong!", "error");
+  swal("Thank you", "We will notify you shortly!", "success");
+},
+'click #secondSlideSuscribeNow' : function(event) {
+  event.preventDefault();
+  var secondSlideEmail = $("#secondSlideEmail").val();
+    // Do form validation
+    var data = {
+      secondSlideEmail: secondSlideEmail.value,
+
+    };
+
+    secondSlideEmail.value="";
+
+    Emails.insert({
+      email: secondSlideEmail
+
+    });
+  // Clear form
+  $("#secondSlideEmail").val('');
+  swal("Thank you", "We will notify you shortly!", "success");
 },
 'click #secondSuscribeNow': function (event) {
   event.preventDefault();
@@ -35,7 +54,7 @@ Template.index.events({
     });
   // Clear form
   $("#secondSectionEmail").val('');
-  swal("Oops...", "Something went wrong!", "error");
+  swal("Thank you", "We will notify you shortly!", "success");
 },
 
 'click #thirdSuscribeNow': function (event) {
@@ -60,6 +79,6 @@ Template.index.events({
     });
   // Clear form
   $("#thirdSectionEmail").val('');
-  swal("Congratulation", "We will notify you shortly!", "success");
+  swal("Thank you", "We will notify you shortly!", "success");
 }
 });

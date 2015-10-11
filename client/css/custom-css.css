@@ -9,3 +9,13 @@ input.middle-email {
 .container.middle-email-container {
   margin-left: 40px;
 }
+.email-panel-header{
+  height: 61px;
+  /*background-color: #fc5a1b;
+  border-color: #fc5a1b;*/
+}
+.panel-primary > .panel-heading {
+     color: #fff;
+    background-color: #fc5a1b;
+    border-color: #fc5a1b;
+}
